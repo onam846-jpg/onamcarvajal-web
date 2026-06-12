@@ -271,10 +271,11 @@ footer {
 }
 
 .podcast-logo img {
- width: 180px;
+  width: 260px;
   max-width: 100%;
   height: auto;
   display: block;
+  filter: drop-shadow(0 0 25px rgba(255, 77, 0, .35));
 }
 
 .podcast-content h2 {
