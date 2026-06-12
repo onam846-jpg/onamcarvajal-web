@@ -179,7 +179,8 @@ h1 {
   }
 
   .metricas {
-grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+}
     gap: 30px 18px;
     padding: 38px 6%;
   }
