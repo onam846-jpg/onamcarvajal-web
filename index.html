@@ -57,23 +57,33 @@
 
     <section class="metricas">
       <div>
-        <h3>+3.7K</h3>
-        <p>Comunidad en YouTube</p>
+        <h3><span class="contador" data-target="29.4">0</span>K</h3>
+        <p>Seguidores en TikTok</p>
       </div>
 
       <div>
-        <h3>One Podcast</h3>
-        <p>Plataforma de conversación y análisis</p>
+        <h3><span class="contador" data-target="3.764">0</span>K</h3>
+        <p>Suscriptores en YouTube</p>
       </div>
 
       <div>
-        <h3>Consultoría</h3>
-        <p>Comunicación estratégica y proyectos</p>
+        <h3>+<span class="contador" data-target="20">0</span></h3>
+        <p>Proyectos de consultoría ejecutados</p>
       </div>
 
       <div>
-        <h3>Producción</h3>
-        <p>Contenido audiovisual y multimedia</p>
+        <h3>+<span class="contador" data-target="30">0</span></h3>
+        <p>Productos de comunicación desarrollados</p>
+      </div>
+
+      <div>
+        <h3>+<span class="contador" data-target="10">0</span></h3>
+        <p>Organizaciones acompañadas</p>
+      </div>
+
+      <div>
+        <h3>+<span class="contador" data-target="100">0</span></h3>
+        <p>Horas de formación impartidas</p>
       </div>
     </section>
 
@@ -204,6 +214,49 @@
     <p>© 2026 Onam Carvajal. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const contadores = document.querySelectorAll('.contador');
+
+    const animarContador = (contador) => {
+      const objetivo = parseFloat(contador.getAttribute('data-target'));
+      const duracion = 1800;
+      const inicio = performance.now();
+
+      const actualizar = (tiempoActual) => {
+        const progreso = Math.min((tiempoActual - inicio) / duracion, 1);
+        const valorActual = objetivo * progreso;
+
+        if (objetivo % 1 !== 0) {
+          contador.textContent = valorActual.toFixed(1);
+        } else {
+          contador.textContent = Math.floor(valorActual);
+        }
+
+        if (progreso < 1) {
+          requestAnimationFrame(actualizar);
+        } else {
+          contador.textContent = objetivo % 1 !== 0 ? objetivo.toString() : objetivo;
+        }
+      };
+
+      requestAnimationFrame(actualizar);
+    };
+
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          animarContador(entrada.target);
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    contadores.forEach((contador) => {
+      observador.observe(contador);
+    });
+  </script>
+
 </body>
 </html>
