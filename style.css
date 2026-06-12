@@ -351,10 +351,10 @@ footer {
     order: 2;
   }
 
-  .hero-imagen img {
-    width: 240px;
-    height: auto;
-  }
+.hero-imagen img {
+  width: 260px;
+  max-width: 85%;
+}
 
   h1 {
     font-size: clamp(2.4rem, 12vw, 3.4rem);
