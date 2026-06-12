@@ -137,7 +137,7 @@ h1 {
 }
 
 .metricas {
-  padding: 45px 8%;
+ padding: 38px 6%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 24px;
