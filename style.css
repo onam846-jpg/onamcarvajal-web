@@ -261,12 +261,13 @@ footer {
 }
 
 .podcast-logo {
-  background: #ffffff;
-  padding: 40px;
+  background: radial-gradient(circle, rgba(255,77,0,.18), transparent 65%);
+  padding: 20px;
   border-radius: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
 }
 
 .podcast-logo img {
