@@ -270,8 +270,10 @@ footer {
 }
 
 .podcast-logo img {
-  width: 100%;
-  max-width: 280px;
+ width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .podcast-content h2 {
