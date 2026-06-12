@@ -137,13 +137,21 @@ h1 {
 }
 
 .metricas {
-  padding: 35px 8%;
+  padding: 45px 8%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  background: #0c0c12;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  background: #050507;
   border-top: 1px solid #1d1d1d;
   border-bottom: 1px solid #1d1d1d;
+  text-align: center;
+}
+
+.metricas div {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .metricas div {
@@ -155,13 +163,15 @@ h1 {
 
 .metricas h3 {
   color: #ff4d00;
-  font-size: 1.5rem;
-  margin-bottom: 6px;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .metricas p {
-  color: #d0d0d0;
-  font-size: .95rem;
+  color: #b8b8b8;
+  font-size: .88rem;
+  line-height: 1.3;
 }
 
 .seccion {
@@ -302,10 +312,9 @@ footer {
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 60px 6%;
-    gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 18px;
+  padding: 38px 6%;
   }
 
   .hero-imagen img {
