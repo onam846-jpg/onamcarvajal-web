@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff4d00;
+  color: #ffb62f;
 }
 
 .hero {
@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .etiqueta {
-  color: #ff4d00;
+  color: #ffb62f;
   font-weight: 900;
   letter-spacing: 3px;
   font-size: 0.9rem;
@@ -123,7 +123,7 @@ h1 {
 
 .principal,
 .links a {
-  background: #ff4d00;
+  background: #ffb62f;
   color: #ffffff;
 }
 
@@ -159,7 +159,7 @@ h1 {
 }
 
 .metricas h3 {
-  color: #ff4d00;
+  color: #ffb62f;
   font-size: 1.8rem;
   margin-bottom: 6px;
   word-break: normal;
@@ -233,7 +233,7 @@ h1 {
 }
 
 .podcast-numeros h3 {
-  color: #ff4d00;
+  color: #ffb62f;
   font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 6px;
@@ -262,7 +262,7 @@ h1 {
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: #ff4d00;
+  border-color: #ffb62f;
 }
 
 .card h3 {
@@ -290,7 +290,7 @@ h1 {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  background: #ff4d00;
+  background: #ffb62f;
   color: #ffffff;
   padding: 14px 20px;
   border-radius: 999px;
