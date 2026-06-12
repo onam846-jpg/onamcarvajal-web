@@ -511,3 +511,8 @@ img {
     padding: 12px 16px;
   }
 }
+.podcast-numeros a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
