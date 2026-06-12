@@ -274,6 +274,47 @@ Conversemos y transformémoslo en una estrategia con resultados.
       observador.observe(contador);
     });
   </script>
+  <script>
+const contadores = document.querySelectorAll('.contador');
+
+const animarContador = (contador) => {
+  const objetivo = parseFloat(contador.dataset.target);
+  const duracion = 1800;
+  const inicio = performance.now();
+
+  const actualizar = (tiempo) => {
+    const progreso = Math.min((tiempo - inicio) / duracion, 1);
+    const valor = objetivo * progreso;
+
+    contador.textContent = Number.isInteger(objetivo)
+      ? Math.floor(valor)
+      : valor.toFixed(1);
+
+    if (progreso < 1) {
+      requestAnimationFrame(actualizar);
+    } else {
+      contador.textContent = objetivo;
+    }
+  };
+
+  requestAnimationFrame(actualizar);
+};
+
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      entrada.target.textContent = "0";
+      animarContador(entrada.target);
+    }
+  });
+}, {
+  threshold: 0.4
+});
+
+contadores.forEach((contador) => {
+  observador.observe(contador);
+});
+</script>
 
 </body>
 </html>
