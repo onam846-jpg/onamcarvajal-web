@@ -139,35 +139,35 @@ h1 {
 }
 
 .metricas {
-  padding: 70px 8%;
+  padding: 45px 8%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 45px 70px;
+  gap: 28px;
   background: #050507;
   border-top: 1px solid #1d1d1d;
   border-bottom: 1px solid #1d1d1d;
 }
 
-.metrica {
+.metricas .metrica {
   background: transparent;
   border: none;
   padding: 0;
 }
 
-.metrica h3 {
+.metricas .metrica h3 {
   color: #ffb62f;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1;
-  margin-bottom: 12px;
-  letter-spacing: -3px;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
 }
 
-.metrica p {
+.metricas .metrica p {
   color: #d0d0d0;
-  font-size: .95rem;
+  font-size: .9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 @media (max-width: 900px) {
