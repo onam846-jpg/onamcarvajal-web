@@ -50,12 +50,13 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 92vh;
-  padding: 70px 8%;
+  min-height: calc(100vh - 90px);
+  padding: 40px 8%;
   display: grid;
- grid-template-columns: 420px 1fr;
+  grid-template-columns: 420px 1fr;
   align-items: center;
- gap: 60px;
+  gap: 60px;
+}
   background:
     radial-gradient(circle at right, rgba(255, 77, 0, .28), transparent 35%),
     linear-gradient(180deg, #050507, #09090d);
@@ -89,10 +90,10 @@ nav a:hover {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 4.4vw, 4.4rem);
-  line-height: 1.05;
+  font-size: clamp(2.6rem, 4vw, 4.8rem);
+  line-height: 0.95;
   letter-spacing: -2px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .descripcion {
@@ -240,4 +241,15 @@ footer {
   .grid-servicios {
     grid-template-columns: 1fr;
   }
+}
+@media (min-width: 1200px) {
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-imagen img {
+    width: 420px;
+  }
+
 }
