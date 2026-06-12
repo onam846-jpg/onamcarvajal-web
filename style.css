@@ -428,37 +428,37 @@ body {
 img {
   max-width: 100%;
 }
-
 @media (max-width: 900px) {
 
   .hero {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 45px 6%;
-    gap: 30px;
+    gap: 24px;
     overflow: hidden;
   }
 
-  .hero-content {
-    order: 1;
-  }
-
   .hero-imagen {
-    order: 2;
+    order: 1;
     width: 100%;
     overflow: hidden;
   }
 
+  .hero-content {
+    order: 2;
+  }
+
   .hero-imagen img {
-    width: 240px;
-    max-width: 80%;
+    width: 260px;
+    max-width: 85%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     display: block;
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.35rem;
     line-height: 1;
     letter-spacing: -1px;
   }
