@@ -217,67 +217,48 @@
   </footer>
 
 <script>
-  const contadores = document.querySelectorAll('.contador');
+const contadores = document.querySelectorAll('.contador');
 
-  const animarContador = (contador) => {
-    const objetivo = parseFloat(contador.getAttribute('data-target'));
-    const duracion = 1800;
-    const inicio = performance.now();
+const animarContador = (contador) => {
+  const objetivo = parseFloat(contador.dataset.target);
+  const duracion = 2000;
+  const inicio = performance.now();
 
-    const actualizar = (tiempoActual) => {
-      const progreso = Math.min((tiempoActual - inicio) / duracion, 1);
-      const valorActual = objetivo * progreso;
+  const actualizar = (tiempo) => {
+    const progreso = Math.min((tiempo - inicio) / duracion, 1);
+    const valor = objetivo * progreso;
 
-      if (objetivo % 1 !== 0) {
-        contador.textContent = valorActual.toFixed(1);
-      } else {
-        contador.textContent = Math.floor(valorActual);
-      }
+    if (objetivo % 1 !== 0) {
+      contador.textContent = valor.toFixed(1);
+    } else {
+      contador.textContent = Math.floor(valor);
+    }
 
-      if (progreso < 1) {
-        requestAnimationFrame(actualizar);
-      } else {
-        contador.textContent = objetivo % 1 !== 0 ? objetivo.toString() : objetivo;
-      }
-    };
-
-    requestAnimationFrame(actualizar);
+    if (progreso < 1) {
+      requestAnimationFrame(actualizar);
+    } else {
+      contador.textContent = objetivo;
+    }
   };
 
-  const observador = new IntersectionObserver((entradas) => {
-    entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        animarContador(entrada.target);
-        observador.unobserve(entrada.target);
-      }
-    });
-  }, {
-    threshold: 0.5
-  });
+  requestAnimationFrame(actualizar);
+};
 
-  contadores.forEach((contador) => {
-    observador.observe(contador);
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      animarContador(entrada.target);
+      observador.unobserve(entrada.target);
+    }
   });
+}, {
+  threshold: 0.5
+});
+
+contadores.forEach((contador) => {
+  observador.observe(contador);
+});
 </script>
-
-      requestAnimationFrame(actualizar);
-    };
-
-    const observador = new IntersectionObserver((entradas) => {
-      entradas.forEach((entrada) => {
-        if (entrada.isIntersecting) {
-          animarContador(entrada.target);
-          observador.unobserve(entrada.target);
-        }
-      });
-    }, {
-      threshold: 0.5
-    });
-
-    contadores.forEach((contador) => {
-      observador.observe(contador);
-    });
-  </script>
 
 </body>
 </html>
