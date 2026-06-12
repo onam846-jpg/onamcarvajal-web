@@ -55,39 +55,27 @@
 
     </section>
 
-<section class="metricas">
+    <section class="metricas">
+      <div>
+        <h3>+3.7K</h3>
+        <p>Comunidad en YouTube</p>
+      </div>
 
-  <div class="metrica">
-    <h3>+<span class="contador" data-target="10">0</span></h3>
-    <p>Años de experiencia</p>
-  </div>
+      <div>
+        <h3>One Podcast</h3>
+        <p>Plataforma de conversación y análisis</p>
+      </div>
 
-  <div class="metrica">
-    <h3><span class="contador" data-target="22">0</span></h3>
-    <p>Campañas de alto impacto</p>
-  </div>
+      <div>
+        <h3>Consultoría</h3>
+        <p>Comunicación estratégica y proyectos</p>
+      </div>
 
-  <div class="metrica">
-    <h3>+<span class="contador" data-target="100">0</span></h3>
-    <p>Productos comunicacionales desarrollados</p>
-  </div>
-
-  <div class="metrica">
-    <h3>+<span class="contador" data-target="20">0</span></h3>
-    <p>Consultorías ejecutadas</p>
-  </div>
-
-  <div class="metrica">
-    <h3>+<span class="contador" data-target="10">0</span></h3>
-    <p>Organizaciones acompañadas</p>
-  </div>
-
-  <div class="metrica">
-    <h3>#<span class="contador" data-target="1">0</span></h3>
-    <p>One Podcast en occidente de Honduras</p>
-  </div>
-
-</section>
+      <div>
+        <h3>Producción</h3>
+        <p>Contenido audiovisual y multimedia</p>
+      </div>
+    </section>
 
     <section id="sobre-mi" class="seccion">
       <h2>Sobre mí</h2>
@@ -205,30 +193,6 @@
         <a href="https://www.tiktok.com/@onepodcast1" target="_blank">TikTok</a>
       </div>
     </section>
-    <section class="seccion">
-
-  <h2>Presencia Digital</h2>
-
-  <div class="metricas">
-
-    <div class="metrica">
-      <h3><span class="contador" data-target="3.764">0</span>K</h3>
-      <p>Suscriptores en YouTube</p>
-    </div>
-
-    <div class="metrica">
-      <h3><span class="contador" data-target="29.4">0</span>K</h3>
-      <p>Seguidores en TikTok</p>
-    </div>
-
-    <div class="metrica">
-      <h3><span class="contador" data-target="1.1">0</span>K</h3>
-      <p>Seguidores en Instagram</p>
-    </div>
-
-  </div>
-
-</section>
 
   </main>
 
@@ -239,50 +203,6 @@
   <footer>
     <p>© 2026 Onam Carvajal. Todos los derechos reservados.</p>
   </footer>
-
-<script>
-const contadores = document.querySelectorAll('.contador');
-
-const animarContador = (contador) => {
-  const objetivo = parseFloat(contador.dataset.target);
-  const duracion = 2000;
-  const inicio = performance.now();
-
-  const actualizar = (tiempo) => {
-    const progreso = Math.min((tiempo - inicio) / duracion, 1);
-    const valor = objetivo * progreso;
-
-    if (objetivo % 1 !== 0) {
-      contador.textContent = valor.toFixed(1);
-    } else {
-      contador.textContent = Math.floor(valor);
-    }
-
-    if (progreso < 1) {
-      requestAnimationFrame(actualizar);
-    } else {
-      contador.textContent = objetivo;
-    }
-  };
-
-  requestAnimationFrame(actualizar);
-};
-
-const observador = new IntersectionObserver((entradas) => {
-  entradas.forEach((entrada) => {
-    if (entrada.isIntersecting) {
-      animarContador(entrada.target);
-      observador.unobserve(entrada.target);
-    }
-  });
-}, {
-  threshold: 0.5
-});
-
-contadores.forEach((contador) => {
-  observador.observe(contador);
-});
-</script>
 
 </body>
 </html>
