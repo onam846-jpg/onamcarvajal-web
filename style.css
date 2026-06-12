@@ -253,3 +253,43 @@ footer {
   }
 
 }
+.podcast-section {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.podcast-logo {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast-logo img {
+  width: 100%;
+  max-width: 280px;
+}
+
+.podcast-content h2 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .podcast-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .podcast-logo {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .podcast-content .links {
+    justify-content: center;
+  }
+}
