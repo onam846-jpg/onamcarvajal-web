@@ -174,21 +174,22 @@ h1 {
 
   .metricas {
     grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .metrica {
     text-align: center;
   }
 
-  .metricas .metrica {
-    text-align: center;
+  .metrica h3 {
+    font-size: 4rem;
+    margin-bottom: 12px;
   }
 
-  .metricas .metrica h3 {
-    text-align: center;
-  }
-
-  .metricas .metrica p {
-    text-align: center;
-    max-width: 260px;
+  .metrica p {
+    max-width: 280px;
     margin: 0 auto;
+    text-align: center;
   }
 
 }
