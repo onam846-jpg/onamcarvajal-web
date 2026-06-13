@@ -334,8 +334,8 @@ footer {
 @media (max-width: 900px) {
 .navbar {
   flex-direction: column;
-  gap: 0px;
-  padding: 6px 5%;
+  gap: 0;
+  padding: 2px 5%;
 }
 
 nav {
@@ -622,4 +622,10 @@ nav a {
 }
 .logo-firma {
   margin-bottom: -10px;
+}
+.logo-firma {
+  margin-bottom: -20px;
+}
+.logo-firma img {
+  margin-top: -10px;
 }
