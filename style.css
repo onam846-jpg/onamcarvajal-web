@@ -372,11 +372,11 @@ footer {
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
-    border: 3px solid #ffb62f;
-    box-shadow: 0 0 45px rgba(255, 182, 47, .35);
-    margin: 0 auto 10px;
-    display: block;
-  }
+ border: 4px solid #ffffff;
+  box-shadow: none;
+  margin: 0 auto 10px;
+  display: block;
+}
 
   h1 {
     font-size: 2.35rem;
