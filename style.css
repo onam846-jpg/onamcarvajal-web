@@ -355,14 +355,15 @@ nav a {
   white-space: nowrap;
 }
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 45px 6%;
-    gap: 24px;
-    overflow: hidden;
-  }
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px 6%;
+  gap: 24px;
+  overflow: hidden;
+  margin-top: -60px;
+}
 
   .hero-imagen {
     order: 1;
