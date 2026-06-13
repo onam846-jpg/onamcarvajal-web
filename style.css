@@ -462,7 +462,6 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
 .video-card {
   display: block;
   text-decoration: none;
