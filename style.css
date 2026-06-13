@@ -675,7 +675,8 @@ nav a {
 }
 
 .logos-colaboraciones img {
-  height: 60px;
+.logos-colaboraciones img {
+  height: 55px;
   width: auto;
   object-fit: contain;
   opacity: 0.9;
