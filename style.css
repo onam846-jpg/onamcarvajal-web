@@ -688,6 +688,18 @@ nav a {
   opacity: 1;
   transform: scale(1.05);
 }
-.logos-colaboraciones img[alt="ASONOG"] {
-  height: 75px;
+
+.logos-colaboraciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logos-colaboraciones img {
+  height: 35px;
+  max-width: 70px;
+  width: auto;
+  object-fit: contain;
 }
