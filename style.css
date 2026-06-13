@@ -498,8 +498,8 @@ footer {
 }
 
 .video-card img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  width: 100%;
+  display: block;
 }
 
 .video-card h3 {
