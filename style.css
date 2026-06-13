@@ -601,8 +601,7 @@ footer {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.logo-firma img {
-  height: 42px;
-  width: auto;
-  display: block;
+  .logo-firma img {
+    height: 36px;
+  }
 }
