@@ -48,21 +48,21 @@ img {
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 18px;
-  font-size: 0.95rem;
+  margin-left: 10px;
+  font-size: 0.80rem;
   font-weight: 700;
-  padding: 13px 22px;
+  padding: 6px 10px;
   border-radius: 999px;
   transition: .3s;
 
-  background: #ffb62f;
-  border: none;
+  background: transparent;
+  border: 1px solid #ffffff;
   white-space: nowrap;
 }
 
 nav a:hover {
-  background: rgba(255, 182, 47, .15);
-  color: #ffb62f;
+  background: #ffffff;
+  color: #050507;
 }
 
 .hero {
