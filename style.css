@@ -366,10 +366,13 @@ footer {
   }
 
   .etiqueta {
-    font-size: 0.68rem;
-    letter-spacing: 1px;
-    white-space: nowrap;
-  }
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
 
   .hero-imagen img {
     width: 260px;
