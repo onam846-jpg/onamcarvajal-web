@@ -497,7 +497,29 @@ footer {
   border-color: #ffb62f;
 }
 
-.video-card img {
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.video-card {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: #14141c;
+  border: 1px solid #292934;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffb62f;
+}
+
 .video-card img {
   width: 100%;
   display: block;
@@ -515,11 +537,13 @@ footer {
   font-weight: 700;
 }
 
-.videos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 35px;
+@media (min-width: 901px) {
+  .video-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
