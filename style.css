@@ -89,8 +89,8 @@ nav a:hover {
 .etiqueta {
   color: #ffb62f;
   font-weight: 900;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
   margin-bottom: 22px;
 }
 
@@ -378,11 +378,11 @@ footer {
   display: block;
 }
 
-  h1 {
-    font-size: 2.35rem;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
 
   .descripcion {
     font-size: 1rem;
