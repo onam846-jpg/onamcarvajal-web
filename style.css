@@ -429,9 +429,9 @@ footer {
   }
 
   .podcast-logo img {
-    width: 110px;
-    height: auto;
-  }
+  width: 130px;
+  height: auto;
+}
 
   .podcast-numeros {
     justify-content: center;
