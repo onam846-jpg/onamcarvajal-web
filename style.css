@@ -169,7 +169,15 @@ h1 {
   letter-spacing: 1px;
   line-height: 1.4;
 }
+@media (min-width: 1200px) {
+  .hero-content {
+    max-width: 700px;
+  }
 
+  .hero-imagen img {
+    width: 420px;
+  }
+}
 @media (max-width: 900px) {
 
   .hero-imagen {
