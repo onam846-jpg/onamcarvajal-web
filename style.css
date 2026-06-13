@@ -140,34 +140,26 @@ h1 {
 
 @media (max-width: 900px) {
 
-  .metricas {
+ .metricas {
     grid-template-columns: 1fr;
-    text-align: center;
+    gap: 50px;
   }
 
-  .metricas .metrica {
+  .metrica {
     text-align: center;
-  }
-
-  .metricas .metrica h3 {
-    text-align: center;
-  }
-
-  .metricas .metrica p {
-    text-align: center;
-    max-width: 260px;
-    margin: 0 auto;
-  }
-@media (max-width: 900px) {
-  .metricas {
-    grid-template-columns: 1fr;
-    gap: 38px;
-    padding: 55px 8%;
   }
 
   .metrica h3 {
     font-size: 4rem;
+    margin-bottom: 12px;
   }
+
+  .metrica p {
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
 }
 
 .seccion p {
