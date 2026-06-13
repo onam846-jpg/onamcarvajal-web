@@ -583,3 +583,21 @@ footer {
     font-size: 1.25rem;
   }
 }
+.botones .btn {
+  width: auto;
+  height: auto;
+  padding: 13px 22px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.botones .principal {
+  background: #ffb62f;
+  color: #ffffff;
+}
+
+.botones .secundario {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
