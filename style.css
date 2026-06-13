@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
+  padding-top: 90px;
 }
 
 img {
