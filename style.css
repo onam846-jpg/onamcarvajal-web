@@ -675,15 +675,15 @@ nav a {
 }
 
 .logos-colaboraciones img {
-  height: 35px;
-  width: auto;
-  max-width: 120px;
+  height: 28px !important;
+  width: auto !important;
+  max-width: 90px !important;
   object-fit: contain;
 }
 
 @media (max-width: 900px) {
   .logos-colaboraciones img {
-    height: 25px;
-    max-width: 80px;
+    height: 20px !important;
+    max-width: 60px !important;
   }
 }
