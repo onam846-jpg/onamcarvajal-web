@@ -338,17 +338,18 @@ footer {
   padding: 6px 5%;
 }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-  }
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 12px;
+}
 
-  nav a {
-    margin-left: 0;
-    font-size: 0.95rem;
-  }
+nav a {
+  margin-left: 0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
 
   .hero {
     display: flex;
