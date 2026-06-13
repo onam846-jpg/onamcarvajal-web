@@ -641,3 +641,9 @@ nav a {
 .logo-firma img {
   margin-top: -18px;
 }
+#sobre-mi,
+#one-podcast,
+#servicios,
+#contacto {
+  scroll-margin-top: 120px;
+}
