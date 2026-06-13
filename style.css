@@ -18,6 +18,10 @@ body {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar {
   width: 100%;
   padding: 24px 8%;
@@ -169,6 +173,149 @@ h1 {
   letter-spacing: 1px;
   line-height: 1.4;
 }
+
+.seccion {
+  padding: 100px 8%;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+.seccion h2 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  margin-bottom: 24px;
+}
+
+.seccion p {
+  max-width: 950px;
+  color: #d0d0d0;
+  font-size: 1.08rem;
+}
+
+.destacado {
+  background: #101018;
+}
+
+.podcast-section {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.podcast-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+}
+
+.podcast-logo img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcast-content h2 {
+  margin-bottom: 20px;
+}
+
+.podcast-numeros {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 26px 0;
+}
+
+.podcast-numeros a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.podcast-numeros div {
+  background: #14141c;
+  border: 1px solid #292934;
+  border-radius: 18px;
+  padding: 18px 22px;
+  min-width: 180px;
+}
+
+.podcast-numeros h3 {
+  color: #ffb62f;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.podcast-numeros p {
+  color: #d0d0d0;
+  font-size: .9rem;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #14141c;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid #292934;
+  transition: .3s;
+  min-width: 0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb62f;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: .98rem;
+}
+
+.contacto {
+  text-align: center;
+}
+
+.contacto p {
+  margin: 0 auto 30px;
+}
+
+.contacto .links {
+  justify-content: center;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  background: #ffb62f;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 0 35px rgba(255, 77, 0, .35);
+  z-index: 200;
+}
+
+footer {
+  padding: 30px 8%;
+  text-align: center;
+  color: #888;
+  background: #030304;
+}
+
 @media (min-width: 1200px) {
   .hero-content {
     max-width: 700px;
@@ -178,31 +325,93 @@ h1 {
     width: 420px;
   }
 }
+
 @media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 5%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 45px 6%;
+    gap: 24px;
+    overflow: hidden;
+  }
 
   .hero-imagen {
+    order: 1;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: visible;
     margin-bottom: 18px;
   }
 
-.hero-imagen img {
-  width: 260px;
-  height: 260px;
-  max-width: none;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-  border: 3px solid #ffb62f;
-  box-shadow: 0 0 45px rgba(255,182,47,.35);
-  margin: 0 auto 10px;
-  display: block;
-}
+  .hero-content {
+    order: 2;
+  }
 
-}
+  .hero-imagen img {
+    width: 260px;
+    height: 260px;
+    max-width: none;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 3px solid #ffb62f;
+    box-shadow: 0 0 45px rgba(255, 182, 47, .35);
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.35rem;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto 28px;
+  }
+
+  .botones {
+    justify-content: center;
+  }
+
+  .metricas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 18px;
+    padding: 50px 6%;
+  }
+
+  .metricas .metrica h3 {
+    font-size: 3.1rem;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .metricas .metrica p {
+    font-size: .9rem;
+    line-height: 1.25;
+    max-width: 150px;
+    margin: 0 auto;
+  }
 
   .seccion {
     padding: 70px 6%;
@@ -251,21 +460,4 @@ h1 {
     font-size: .85rem;
     padding: 12px 16px;
   }
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-}
-
-.podcast-numeros a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
