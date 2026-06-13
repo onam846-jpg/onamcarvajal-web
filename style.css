@@ -359,10 +359,10 @@ nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 45px 6%;
+  padding: 0 6% 45px;
   gap: 24px;
   overflow: hidden;
-  margin-top: -90px;
+  margin-top: -100px;
 }
 
   .hero-imagen {
