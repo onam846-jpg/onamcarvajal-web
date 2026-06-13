@@ -522,3 +522,22 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 2rem;
+  transition: .3s;
+}
+
+.social-icons a:hover {
+  color: #ffb62f;
+  transform: translateY(-3px);
+}
