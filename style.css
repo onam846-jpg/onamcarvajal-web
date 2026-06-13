@@ -110,19 +110,18 @@ h1 {
 
 .botones,
 .links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
 
-.btn,
 .links a {
-  display: inline-block;
-  padding: 13px 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 800;
-  transition: .3s;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .principal,
