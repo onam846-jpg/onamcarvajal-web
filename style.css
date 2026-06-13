@@ -437,7 +437,7 @@ footer {
   }
 
   .podcast-logo img {
-    width: 130px;
+    width: 180px;
     height: auto;
   }
 
@@ -446,9 +446,9 @@ footer {
   }
 
   .podcast-numeros div {
-    width: 100%;
-    max-width: 280px;
-  }
+  flex: 1;
+  min-width: 140px;
+}
 
   .podcast-content .links {
     justify-content: center;
