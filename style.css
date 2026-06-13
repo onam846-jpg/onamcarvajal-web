@@ -468,24 +468,16 @@ footer {
   margin-top: 35px;
 }
 
-<div class="videos-grid">
+.videos-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 20px;
+  background: #14141c;
+}
 
-  <a href="https://youtu.be/8UZe-Cgq0ZE?si=Y6hrjwS8eaUoOpZc" target="_blank" class="video-card">
-    <img src="https://img.youtube.com/vi/8UZe-Cgq0ZE/maxresdefault.jpg" alt="Video One Podcast">
-    <h3>El sicario se persignó para matar</h3>
-    <span>Ver episodio →</span>
-  </a>
-
-  <a href="https://youtu.be/RZATrTVmtaE?si=CCYkRKu3IoXrJwkj" target="_blank" class="video-card">
-    <img src="https://img.youtube.com/vi/RZATrTVmtaE/maxresdefault.jpg" alt="Video One Podcast">
-    <h3>Pagué 2 rescates y me engañaron</h3>
-    <span>Ver episodio →</span>
-  </a>
-
-  <a href="https://youtu.be/92uHNOrXs94?si=HL--tC2fIkUuOkJm" target="_blank" class="video-card">
-    <img src="https://img.youtube.com/vi/92uHNOrXs94/maxresdefault.jpg" alt="Video One Podcast">
-    <h3>Estuve en coma y vi al diablo</h3>
-    <span>Ver episodio →</span>
-  </a>
-
-</div>
+@media (max-width: 900px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
