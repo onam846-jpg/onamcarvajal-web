@@ -54,6 +54,10 @@ nav a {
   padding: 8px 12px;
   border-radius: 999px;
   transition: .3s;
+
+  background: rgba(255, 182, 47, 0.12);
+  border: 1px solid rgba(255, 182, 47, 0.35);
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -335,7 +339,7 @@ footer {
 .navbar {
   flex-direction: column;
   gap: 0;
-  padding: 2px 5%;
+  padding: 0px 5% 4px;
 }
 
 nav {
@@ -628,4 +632,11 @@ nav a {
 }
 .logo-firma img {
   margin-top: -10px;
+}
+.logo-firma {
+  margin-bottom: -28px;
+}
+
+.logo-firma img {
+  margin-top: -18px;
 }
