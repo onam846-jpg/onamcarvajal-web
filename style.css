@@ -677,6 +677,7 @@ nav a {
 .logos-colaboraciones img {
 .logos-colaboraciones img {
   height: 55px;
+  max-width: 180px;
   width: auto;
   object-fit: contain;
   opacity: 0.9;
@@ -686,4 +687,7 @@ nav a {
 .logos-colaboraciones img:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+.logos-colaboraciones img[alt="ASONOG"] {
+  height: 75px;
 }
