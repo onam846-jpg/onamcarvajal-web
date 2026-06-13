@@ -181,18 +181,18 @@ h1 {
     margin-bottom: 18px;
   }
 
-  .hero-imagen img {
-    width: 260px;
-    height: 260px;
-    max-width: 82vw;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
-    border: 3px solid #ffb62f;
-    box-shadow: 0 0 45px rgba(255, 182, 47, .35);
-    margin: 0 auto;
-    display: block;
-  }
+.hero-imagen img {
+  width: 260px;
+  height: 260px;
+  max-width: none;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid #ffb62f;
+  box-shadow: 0 0 45px rgba(255,182,47,.35);
+  margin: 0 auto 10px;
+  display: block;
+}
 
 }
 
