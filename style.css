@@ -171,24 +171,29 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .metricas {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 34px 18px;
-    padding: 50px 6%;
+
+  .hero-imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 18px;
   }
 
-  .metricas .metrica h3 {
-    font-size: 3.1rem;
-    line-height: 1;
-    margin-bottom: 10px;
-  }
-
-  .metricas .metrica p {
-    font-size: .9rem;
-    line-height: 1.25;
-    max-width: 150px;
+  .hero-imagen img {
+    width: 260px;
+    height: 260px;
+    max-width: 82vw;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 3px solid #ffb62f;
+    box-shadow: 0 0 45px rgba(255, 182, 47, .35);
     margin: 0 auto;
+    display: block;
   }
+
 }
 
   .seccion {
